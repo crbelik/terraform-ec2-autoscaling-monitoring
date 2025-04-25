@@ -29,7 +29,7 @@ This project builds a fully automated EC2 deployment on AWS using Terraform. It 
 ├── main.tf
 ├── variables.tf
 ├── ec2.tf
-├── autoscaling.tf     # (coming soon)
+├── autoscaling.tf     
 ├── alb.tf             # (coming soon)
 ├── outputs.tf
 ├── scripts/
