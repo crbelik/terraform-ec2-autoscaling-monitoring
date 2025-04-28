@@ -35,8 +35,6 @@ If deployed, it can be accessed at its public IP address on port **80**.
 
 ## Screenshots
 
-## Screenshots
-
 ### EC2 Instance
 ![EC2 Instance](screenshots/EC2_Instance.PNG)
 
