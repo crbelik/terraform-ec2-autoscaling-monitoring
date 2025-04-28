@@ -1,53 +1,66 @@
 # Terraform EC2 Auto Scaling Project
-**README IN PROGRESS**
 
-This project builds a fully automated EC2 deployment on AWS using Terraform. It includes auto scaling, a launch template, security configuration, and serves a live HTML page from each instance.
+This project provisions a fully functional EC2 Auto Scaling Group on AWS using Terraform.  
+It deploys Ubuntu servers running a basic Python web server and manages scaling policies for high availability.
 
-## Stack
+---
+
+## Stack:
 
 - Terraform
 - AWS EC2
-- Auto Scaling Groups
-- Launch Templates
-- Security Groups
-- Ubuntu
-- Python HTTP Server
+- AWS Auto Scaling Groups
+- AWS Launch Templates
+- AWS Security Groups
+- AWS IAM
+- AWS VPC and Subnets
+- GitHub
 
-## Features
+## Features:
 
-- Launches EC2 instances using the latest Ubuntu AMI
-- Bootstraps a Python-based web server with `user_data`
-- Exposes the service publicly on port 80
-- SSH restricted to personal IP address
-- Scales instances dynamically (coming in autoscaling.tf)
-- Modular and reusable Terraform structure
+- Creates an EC2 launch template
+- Deploys an Auto Scaling Group
+- Configures a security group allowing HTTP and limited SSH
+- Installs and runs a Python web server at boot
+- Tags all infrastructure for easy management
+- Outputs key resource information after deployment
 
-## Project Structure
+---
 
-```bash
-.
-├── main.tf
-├── variables.tf
-├── ec2.tf
-├── autoscaling.tf     # (coming soon)
-├── alb.tf             # (coming soon)
-├── outputs.tf
-├── scripts/
-│   └── user_data.sh
-├── .gitignore
-└── README.md
-```
+## Live Preview:
 
-## Usage
+If deployed, it can be accessed at its public IP address on port **80**.
 
-```bash
-terraform init
-terraform apply
-```
+[Live Page](http://100.25.10.215)
 
-## Screenshots / Outputs
+---
 
-In Progress
+## Screenshots
+
+## Screenshots
+
+### EC2 Instance
+![EC2 Instance](screenshots/EC2_Instance.PNG)
+
+### Auto Scaling Group
+![Auto Scaling Group](screenshots/AutoScaling_Group.PNG)
+
+### Launch Template
+![Launch Template](screenshots/Launch_Temp.PNG)
+
+### Security Group
+![Security Group](screenshots/Security_Group.PNG)
+
+### Terraform Apply - Terminal Output
+**Terraform Plan and Apply Process:**
+
+![Terraform Apply Part 1](screenshots/Terminal1.PNG)
+
+![Terraform Apply Part 2](screenshots/Terminal2.PNG)
+
+![Terraform Apply Part 3](screenshots/Terminal3.PNG)
+
+---
 
 ## Find Me Here
 

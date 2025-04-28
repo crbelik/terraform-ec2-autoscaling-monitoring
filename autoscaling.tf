@@ -21,7 +21,7 @@ resource "aws_autoscaling_group" "web_asg" {
     force_delete = true
 
     launch_template {
-        id = aws_launch_template.web_lt
+        id = aws_launch_template.web_lt.id
         version = "$Latest"
     }
     
