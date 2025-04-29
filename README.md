@@ -3,8 +3,6 @@
 This project provisions a fully functional EC2 Auto Scaling Group on AWS using Terraform.  
 It deploys Ubuntu servers running a basic Python web server and manages scaling policies for high availability.
 
----
-
 ## Stack:
 
 - Terraform
@@ -25,17 +23,13 @@ It deploys Ubuntu servers running a basic Python web server and manages scaling 
 - Tags all infrastructure for easy management
 - Outputs key resource information after deployment
 
----
+## Live Site:
 
 If deployed, it can be accessed at its public IP address on port **80**.
 
 [Live Page](http://100.25.10.215)
 
----
-
-## Screenshots
-
-## Screenshots
+## Screenshots:
 
 ### EC2 Instance
 ![EC2 Instance](screenshots/EC2_Instance.PNG)
@@ -49,7 +43,7 @@ If deployed, it can be accessed at its public IP address on port **80**.
 ### Security Group
 ![Security Group](screenshots/Security_Group.PNG)
 
-### Terraform Apply - Terminal Output
+### Terminal Output
 **Terraform Plan and Apply Process:**
 
 ![Terraform Apply Part 1](screenshots/Terminal1.PNG)
