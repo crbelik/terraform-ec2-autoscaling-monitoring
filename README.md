@@ -27,7 +27,8 @@ It deploys Ubuntu servers running a basic Python web server and manages scaling 
 
 If deployed, it can be accessed at its public IP address on port **80**.
 
-[Live Page](http://100.25.10.215)
+> ⚠️ **Note:** This site is no longer live to minimize AWS usage. Please refer to the screenshots below for a full deployment preview.
+
 
 ## Screenshots:
 
